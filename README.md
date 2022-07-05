@@ -4,7 +4,7 @@ What you see is a repository of my solution for task no. 3. of the [Introduction
 
 # Brief description
 
-The task was to TODO
+The task was to implement a libary of integer sets as AVL trees, where each node contains an interval of values.
 
 # Full description 
 

@@ -1,6 +1,6 @@
 # Zadanie 3: Modyfikacja drzew
 
-Zadanie polega na **zmodyfikowaniu biblioteki zbiorów pojedynczych elementów zaimplementowanych jako pewien wariant drzew AVL** (drzewa BST z wyważaniem). 
+Zadanie polega na **zmodyfikowaniu biblioteki zbiorów pojedynczych elementów zaimplementowanych jako pewien wariant [drzew AVL](https://en.wikipedia.org/wiki/AVL_tree)** (drzewa [BST](https://en.wikipedia.org/wiki/Binary_search_tree) z wyważaniem). 
 
 Dzięki wyważaniu wysokość drzewa jest zawsze rzędu logarytmu z liczby wierzchołków i dlatego wszystkie operacje wykonywane są w czasie logarytmicznym (nawet operacja `split`, ale to jest trochę mniej oczywiste: wynika z tego, że koszt `join` jest w istocie proporcjonalny do różnicy wysokości drzew, które łączymy. A ponieważ na `split` składa się ciąg operacji `join` na coraz wyższych drzewach, ich koszty sumują się do wysokości drzewa razy pewna stała).
 
@@ -10,9 +10,9 @@ W naszej bibliotece dopuszczamy przedziały jednoelementowe, np. $[3,\ldots,3]$.
 
 Wszystkie operacje (poza `fold`, `iter`, `elements` oraz `is_empty`) mają wykonywać się w czasie (zamortyzowanym) $O(log n)$, gdzie $n$ jest liczbą wierzchołków w drzewie.
 
-Do zadania dołączona jest oryginalna specyfikacja i implementacja zbiorów (obie dostępne na licencji *GNU Lesser General Public License*) oraz specyfikacja zbiorów przedziałów, której implementację należy przesłać poprzez system moodle jako plik o nazwie [**iSet.ml**](TODO). 
+Do zadania dołączona jest oryginalna specyfikacja i implementacja zbiorów (obie dostępne na licencji *GNU Lesser General Public License*) oraz specyfikacja zbiorów przedziałów, której implementację należy przesłać poprzez system moodle jako plik o nazwie [**iSet.ml**](https://github.com/kfernandez31/WPF-3-AVL-Tree/blob/main/src/iSet.ml). 
 
-Przy implementacji zwróć uwagę, jak zachowuje się Twój kod dla liczb równych bądź bliskich `max_int` (albo `min_int`). W szczególności konkretne wymaganie dotyczące tego aspektu dla funkcji below podane jest w specyfikacji ([**iSet.mli**](TODO)).
+Przy implementacji zwróć uwagę, jak zachowuje się Twój kod dla liczb równych bądź bliskich `max_int` (albo `min_int`). W szczególności konkretne wymaganie dotyczące tego aspektu dla funkcji below podane jest w specyfikacji ([**iSet.mli**](https://github.com/kfernandez31/WPF-3-AVL-Tree/blob/main/src/iSet.mli)).
 
 Jak zwykle implementacja powinna być udokumentowana; w szczególności należy wpisać w komentarzu niezmienniki dla używanych struktur danych oraz pre- i post-warunki wszystkich metod występujących w implementacji (zwłaszcza tych, których nazwy nie występują w specyfikacji). Warunki te mogą dotyczyć np. poprawności drzew, zakładanej różnicy wysokości drzew, itp.
 
